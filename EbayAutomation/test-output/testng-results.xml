@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="8" total="12" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="79913" started-at="2019-02-01T10:35:37Z" finished-at="2019-02-01T10:36:57Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="79913" started-at="2019-02-01T10:35:37Z" finished-at="2019-02-01T10:36:57Z">
+      <class name="EbayOperations.test_Setup">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:EbayOperations.test_Setup@543c6f6d]" name="setUP" is-config="true" duration-ms="14667" started-at="2019-02-01T10:35:23Z" finished-at="2019-02-01T10:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:EbayOperations.test_Setup@543c6f6d]" name="tearDown" is-config="true" duration-ms="3605" started-at="2019-02-01T10:36:57Z" finished-at="2019-02-01T10:37:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EbayOperations.test_Setup -->
+      <class name="EbayOperations.ebay_Signin">
+        <test-method status="PASS" signature="signin()[pri:0, instance:EbayOperations.ebay_Signin@51c8530f]" name="signin" duration-ms="41117" started-at="2019-02-01T10:36:11Z" finished-at="2019-02-01T10:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+      </class> <!-- EbayOperations.ebay_Signin -->
+      <class name="EbayOperations.ebay_ExtraTasks">
+        <test-method status="FAIL" signature="tiltandscroll()[pri:0, instance:EbayOperations.ebay_ExtraTasks@43738a82]" name="tiltandscroll" duration-ms="5159" started-at="2019-02-01T10:36:52Z" finished-at="2019-02-01T10:36:57Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=3abace39, platform=LINUX, deviceUDID=3abace39, appActivity=com.ebay.mobile.activities.MainActivity, desired={app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, appActivity=com.ebay.mobile.activities.MainActivity, platformVersion=6.0.1, platformName=Android, deviceName=3abace39}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo P1a42, platformName=Android, deviceManufacturer=LENOVO}]
+Session ID: a99f4e85-550c-4239-adbc-169bc8db1ab3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=3abace39, platform=LINUX, deviceUDID=3abace39, appActivity=com.ebay.mobile.activities.MainActivity, desired={app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, appActivity=com.ebay.mobile.activities.MainActivity, platformVersion=6.0.1, platformName=Android, deviceName=3abace39}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo P1a42, platformName=Android, deviceManufacturer=LENOVO}]
+Session ID: a99f4e85-550c-4239-adbc-169bc8db1ab3
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:336)
+at io.appium.java_client.TouchAction.perform(TouchAction.java:323)
+at io.appium.java_client.AppiumDriver.doSwipe(AppiumDriver.java:383)
+at io.appium.java_client.android.AndroidDriver.swipe(AndroidDriver.java:186)
+at EbayOperations.ebay_ExtraTasks.tiltandscroll(ebay_ExtraTasks.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+... 33 more
+Caused by: java.net.SocketException: Connection reset
+at java.net.SocketInputStream.read(SocketInputStream.java:209)
+at java.net.SocketInputStream.read(SocketInputStream.java:141)
+at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tiltandscroll -->
+      </class> <!-- EbayOperations.ebay_ExtraTasks -->
+      <class name="EbayOperations.ebay_CountrySelection">
+        <test-method status="PASS" signature="countryselect()[pri:0, instance:EbayOperations.ebay_CountrySelection@13eb8acf]" name="countryselect" duration-ms="33529" started-at="2019-02-01T10:35:37Z" finished-at="2019-02-01T10:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countryselect -->
+      </class> <!-- EbayOperations.ebay_CountrySelection -->
+      <class name="EbayOperations.ebay_SearchPurchase">
+        <test-method status="FAIL" signature="searchitem()[pri:0, instance:EbayOperations.ebay_SearchPurchase@7403c468]" name="searchitem" duration-ms="69" started-at="2019-02-01T10:36:52Z" finished-at="2019-02-01T10:36:52Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=3abace39, platform=LINUX, deviceUDID=3abace39, appActivity=com.ebay.mobile.activities.MainActivity, desired={app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, appActivity=com.ebay.mobile.activities.MainActivity, platformVersion=6.0.1, platformName=Android, deviceName=3abace39}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo P1a42, platformName=Android, deviceManufacturer=LENOVO}]
+Session ID: a99f4e85-550c-4239-adbc-169bc8db1ab3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=3abace39, platform=LINUX, deviceUDID=3abace39, appActivity=com.ebay.mobile.activities.MainActivity, desired={app=/Users/Easwaraprasath/eclipse-workspace/EbayAutomation/Application/eBay.apk, appPackage=com.ebay.mobile, appActivity=com.ebay.mobile.activities.MainActivity, platformVersion=6.0.1, platformName=Android, deviceName=3abace39}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo P1a42, platformName=Android, deviceManufacturer=LENOVO}]
+Session ID: a99f4e85-550c-4239-adbc-169bc8db1ab3
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at EbayOperations.ebay_SearchPurchase.searchitem(ebay_SearchPurchase.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Shanis-iMac.local', ip: '10.208.90.161', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_102'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+... 42 more
+Caused by: java.net.SocketException: Connection reset
+at java.net.SocketInputStream.read(SocketInputStream.java:209)
+at java.net.SocketInputStream.read(SocketInputStream.java:141)
+at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchitem -->
+      </class> <!-- EbayOperations.ebay_SearchPurchase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

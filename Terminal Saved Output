@@ -1,0 +1,48 @@
+Last login: Wed Dec 26 11:59:35 on console
+Pranavs-Mac-mini:~ wipro$ jad
+-bash: jad: command not found
+Pranavs-Mac-mini:~ wipro$ java -v
+No Java runtime present, requesting install.
+Pranavs-Mac-mini:~ wipro$ java -v
+Unrecognized option: -v
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+Pranavs-Mac-mini:~ wipro$ java -version
+java version "1.8.0_191"
+Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
+Pranavs-Mac-mini:~ wipro$ vim ~/.bash_profile
+Pranavs-Mac-mini:~ wipro$  emacs .profile
+
+
+
+
+
+
+
+
+
+JAVA_HOME=/Library/Java/Home
+export JAVA_HOME;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-uuu:**-F1  .profile       All L4     (Shell-script[sh])------------------------
+Auto-saving...done
